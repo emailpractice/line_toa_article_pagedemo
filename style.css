@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /*讓跳轉anchor的時候是滑下去的 而不是直接跳轉*/
+}
+
+a {
+    text-decoration: none
+}
+
+/*ctrl + 滾輪的那種放大 是會很大程度影響排版的。 如果看到liverserver上面
+有異樣，要記得先檢查放大比例是不是100。 不然程式碼調半天白搭。*/
+main {
+    width: min(70ch, 100%-4rem);
+    margin-inline: auto;
+}
+
+img {
+
+    display: block;
+    vertical-align: text-bottom;
+}
+
+.bground_not_blur {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    opacity: 100%;
+    position: fixed;
+    margin: auto;
+    filter: blur(6px);
+    animation-name: blur_out_bg;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur_out_bg {
+    from {
+        filter: blur(6px);
+
+    }
+
+    to {
+        filter: blur(0px);
+    }
+}
+
+.bground_blur {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: auto;
+    opacity: 100%;
+    animation-duration: 1s;
+    animation-name: blur_in_bg;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blur_in_bg {
+    from {
+        filter: blur(0px);
+
+    }
+
+    to {
+        filter: blur(6px);
+    }
+}
+
+
+.black_not_overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+    opacity: 50%;
+    background-color: black;
+    animation-name: fade_out_overlay;
+    animation-duration: 1s;
+    animation-delay: 90ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_out_overlay {
+    from {
+        opacity: 50%;
+
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+.black_overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    border: 3px;
+    opacity: 0%;
+    background-color: black;
+    animation-name: fade_in_overlay;
+    animation-duration: 1s;
+    animation-delay: 50ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fade_in_overlay {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 50%;
+    }
+}
+
+
+
+.show_start_your_explore_text {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black(252, 252, 252);
+    font-size: 4rem;
+}
+
+
+
+
+.not_show_start_your_explore_text {
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 4rem;
+    animation-name: fade_out_start_your_explore_text;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+
+
+@keyframes fade_out_start_your_explore_text {
+    from {
+        opacity: 100%;
+
+
+    }
+
+    to {
+        opacity: 0%;
+
+    }
+}
+
+
+
+.line_text {
+    position: relative;
+    left: 56%;
+    top: 305px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    border-left: 100px;
+    width: 100vh;
+    animation-name: fade_in_line;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+
+
+}
+
+.line_text:hover {
+    color: antiquewhite;
+}
+
+@keyframes fade_in_line {
+    from {
+        opacity: 0%;
+
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
+.moved_text {
+    position: relative;
+    left: 32%;
+    top: 265px;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1px;
+    width: 100vh;
+    animation-name: go_corner_line;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes go_corner_line {
+    0% {
+        left: 32%;
+        top: 265px;
+        font-size: 3rem;
+
+    }
+
+    30% {
+        opacity: 10%;
+    }
+
+    100% {
+        left: 2%;
+        top: 10px;
+        font-size: 1rem;
+        opacity: 80%;
+    }
+}
+
+.moved_text:hover {
+    color: antiquewhite;
+
+}
+
+.foot {
+    position: relative;
+    bottom: -800px;
+    left: 1060px;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    margin-top: 150px;
+    text-align: right;
+    line-height: 65px;
+}
