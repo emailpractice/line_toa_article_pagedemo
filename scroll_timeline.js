@@ -27,6 +27,7 @@ var first = nodes[0];
 var second = nodes[1];
 var third = nodes[2];
 var fourth = nodes[3];
+var fifth = nodes[4];
 
 
 
@@ -51,6 +52,10 @@ window.addEventListener('click', () => {
   if (clickCounter == 5) {
     third.className = 'moved_text'
     fourth.className = 'line_text'
+  }
+  if (clickCounter == 6) {
+    fourth.className = 'moved_text'
+    fifth.className = 'line_text'
   }
 });
 
