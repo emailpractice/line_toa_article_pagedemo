@@ -1,0 +1,21 @@
+.title1 {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    width: 45%;
+    transform: translate(-50%, 0%);
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 28px;
+}
