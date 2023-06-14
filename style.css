@@ -225,7 +225,7 @@ img {
     z-index: 1;
 }
 
-.button_line_to_article_page:hover {
+.show_button_line_to_article_page:hover {
     color: #fff;
     background-color: #000
 }
@@ -623,6 +623,22 @@ img {
     opacity: 50%;
 }
 
+.container {
+    position: relative;
+    top: 100px;
+}
+
+.showcase_pic2 {
+    position: absolute;
+    left: 49%;
+    top: 130%;
+
+}
+
+.showcase_pic:hover {
+    opacity: 50%;
+}
+
 .tittle_text {
     writing-mode: vertical-lr;
     position: relative;
@@ -633,7 +649,23 @@ img {
 
 }
 
+.tittle_text2 {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 24.2%;
+    top: 200px;
+    color: aliceblue;
+    font-size: 2rem;
+}
 
+.tittle_text3 {
+    writing-mode: vertical-lr;
+    position: relative;
+    left: 28.2%;
+    top: -100px;
+    color: aliceblue;
+    font-size: 2rem;
+}
 
 
 .the_aroma_page_tittle {
@@ -659,7 +691,7 @@ img {
 
 #the_order_page {
     position: relative;
-    top: -35px;
+    top: -800px;
 }
 
 
@@ -670,19 +702,24 @@ img {
 
 
 
-.messanger_example4:hover {
-    opacity: 50%;
+
+
+.parser2 {
+    margin-bottom: 10px;
 }
 
-
-
+.author {
+    position: relative;
+    object-fit: fill;
+}
 
 .foot {
-    position: relative;
-    bottom: -10px;
-    left: -5px;
+    position: absolute;
+    bottom: -4870px;
+    left: -10px;
     width: 100%;
     height: 60px;
+    background-color: black;
     color: #fff;
     margin-top: 150px;
     text-align: right;
