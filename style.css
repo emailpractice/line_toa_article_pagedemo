@@ -635,6 +635,11 @@ img {
 
 }
 
+.showcase_pic2:hover {
+    opacity: 50%;
+
+}
+
 .showcase_pic:hover {
     opacity: 50%;
 }
