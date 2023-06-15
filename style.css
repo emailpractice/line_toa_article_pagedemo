@@ -677,7 +677,7 @@ img {
     position: relative;
     width: 500px;
     top: -250px;
-    left: 40%;
+    left: 41%;
     color: aliceblue;
     padding-bottom: 15px;
 }
@@ -707,15 +707,13 @@ img {
 
 
 
-.parser2 {
-    margin-bottom: 10px;
-}
+
 
 .author {
     position: relative;
     left: 50%;
-    top: 40%;
-    transform: translate(-50%, -20%);
+    top: 55%;
+    transform: translate(-50%, -30%);
     width: 60%;
 }
 
